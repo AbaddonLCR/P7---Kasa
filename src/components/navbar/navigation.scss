@@ -1,0 +1,21 @@
+@import '../../styles/main.scss';
+
+
+.navigation {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     &_list {
+          display: flex;
+          gap: 50px;
+          font-size: 20px;
+     }
+}
+
+a.active {
+     text-decoration: underline solid $color-secondary;
+}
+
+a:visited {
+     text-decoration: none;
+}

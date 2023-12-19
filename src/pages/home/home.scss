@@ -1,0 +1,10 @@
+@import '../../styles/main.scss';
+
+.homePage {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     row-gap: 50px;
+     width: 95%;
+     margin: 0 auto;
+}

@@ -1,0 +1,12 @@
+@import '../../styles/main.scss';
+
+.footer{
+     @include flex_column;
+     justify-content: space-evenly;
+     width: 95%;
+     height: 150px;
+     background-color: black;
+     &_copyright {
+          color: $color-primary;
+     }
+};

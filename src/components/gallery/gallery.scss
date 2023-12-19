@@ -1,0 +1,13 @@
+@import '../../styles/main.scss';
+
+.home_gallery_container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     row-gap: 30px;
+     flex-wrap: wrap;
+     width: 95%;
+     background-color: $color-tertiary;
+     border-radius: 25px;
+     padding: 30px 0px;
+}
