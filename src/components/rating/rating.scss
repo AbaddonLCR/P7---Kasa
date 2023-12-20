@@ -1,0 +1,11 @@
+@import '../../styles/main.scss';
+
+.rating {
+     display: flex;
+     column-gap: 15px;
+     & img {
+          width: 20px;
+          height: 20px;
+     }
+}
+
