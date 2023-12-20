@@ -4,7 +4,7 @@ import './navigation.scss';
 
 const Navigation = () => {
      return (
-          <div classname="navigation">
+          <div className="navigation">
                <ul className='navigation_list'>
                     <NavLink to="/" className={({ isActive}) => isActive ? "active" : null}>
                          <li>Accueil</li>
