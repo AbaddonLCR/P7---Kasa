@@ -1,0 +1,43 @@
+@import '../../styles/main.scss';
+
+.collapse {
+     background-color: $color-tertiary;
+     width: 70%;
+     margin: 0 auto;
+     border-radius: 10px;
+     &_title {
+          display: flex;
+          justify-content: space-between;
+          background-color: $color-secondary;
+          color: $color-primary;
+          border-radius: 10px;
+          font-size: normal;
+          padding: 10px 15px;
+          .arrow_up {
+               transition: all 0.2s ease-in-out;
+               transform: rotate(0deg);
+          }
+          .arrow_down {
+               transition: all 0.2s ease-in-out;
+               transform: rotate(180deg);
+          }
+     }
+     &_description {
+          padding: 20px 15px 15px 15px;
+          height: auto;
+          color: $color-secondary;
+          font-size: large;
+          opacity: 1;
+          transition: all;
+               &_hidden {
+                    visibility: hidden;
+                    opacity: 0;
+                    height: 0;
+               }
+     }
+}
+
+.collapse_lodging {
+     display: flex;
+     justify-content: space-between;
+}
