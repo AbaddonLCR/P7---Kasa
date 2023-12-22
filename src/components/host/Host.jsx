@@ -1,11 +1,13 @@
 import React from 'react';
-import datas from '../../data/data.json';
 
-const Host = () => {
+const Host = (props) => {
+
+     const infoHost = props.host; 
+
      return (
           <div className='host'>
-               <p className='host_name'>{datas.host.name}</p>
-               <img className='host_picture' src={datas.host.picture} alt={datas.host.name} />
+               <p className='host_name'>{infoHost.name}</p>
+               <img className='host_picture' src={infoHost.picture} alt={infoHost.name} />
           </div>
      );
 };
