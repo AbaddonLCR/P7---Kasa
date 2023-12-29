@@ -23,6 +23,7 @@ const Carousel = (props) => {
      return (
           <div style={{backgroundImage : `url(${imageCarousel[currentIndex]})`}} className='carousel'>
                {imageCarousel.length > 1 &&
+               
                <div>
                     <img 
                     className='carousel_arrow carousel_arrow_right' 

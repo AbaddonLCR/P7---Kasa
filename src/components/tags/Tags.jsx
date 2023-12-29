@@ -1,11 +1,16 @@
 import React from 'react';
 import './tags.scss';
 
-const Tags = ({tag}) => {
+const Tags = ({tags}) => {
+
+     const Tags = {tags};
+
      return (
-          <span>
-               {tag}
-          </span>
+          <div className='tag'>
+               <span>
+                    {Tags.tags}
+               </span>
+          </div>
      );
 };
 
