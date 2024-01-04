@@ -23,34 +23,45 @@ const Lodging = () => {
           <main className='lodgingPage'>
                <Header />
                <Carousel pictures={data.pictures} picturesLength={data.pictures.length} />
-               <div className='adress-lodging-container'>
-                    <h2 className='lodging-title'>{data.title}</h2>
-                    <p className='lodging-location'>{data.location}</p>
-               </div>
-               <div>
-                    {data.tags.map(tag => {
-                         return (
-                              <Tags tags={tag} />
-                         )
-                    })}
-               </div>
-               <Host host={data.host}/>
-               <Rating score={data.rating} />
-               <div className='collapse_lodging_container'>
-                    <div className='collapse_lodging'>
-                         <Collapse 
-                              key={`${data.id}-${data.index}`}
-                              collapseTitle={<h3>Description</h3>}
-                              collapseDescription={<p>{data.description}</p>}/>
-                         
+               <section className='description-lodging-container'>
+                    <div className='description-lodging-container-left'>
+                         <div className='description-lodging'>
+                              <h2 className='lodging-title'>{data.title}</h2>
+                              <p className='lodging-location'>{data.location}</p>
+                         </div>
+                         <div className='tags-container'>
+                              {data.tags.map(tag => {
+                                   return (
+                                        <Tags tags={tag} />
+                                   )
+                              })}
+                         </div>
                     </div>
-                    <div className='collapse_lodging'>
-                         <Collapse 
-                              key={`${data.title}-${data.index}`}
-                              collapseTitle={<h3>Équipements</h3>}
-                              collapseDescription={<p>{data.equipments}</p>}/>
+                    <div className='description-lodging-container-right'>
+                         <Host host={data.host}/>
+                         <Rating score={data.rating} />
                     </div>
-               </div>
+               </section>
+               <section className='collapse_lodging'>
+                    <div className='collapse_lodging_container'>
+                         <div className='collapse_lodging_description'>
+                              <Collapse 
+                                   collapseTitle={<h3>Description</h3>}
+                                   collapseDescription={<p>{data.description}</p>}/>
+                              
+                         </div>
+                         <div className='collapse_lodging_equipments'>
+                              <Collapse 
+                                   // key={`${data.title}-${data.index}`}
+                                   collapseTitle={<h3>Équipements</h3>}
+                                   // collapseDescription={<p>{data.equipments}</p>}/>
+                                   collapseDescription={data.equipments.map((equipments, index) => (
+                                        <li key={`${index}-${equipments}`}>{equipments}</li>
+                                   ))}
+                              />
+                         </div>
+                    </div>
+               </section>
                <Footer />
           </main>
      );

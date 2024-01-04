@@ -9,3 +9,40 @@
      row-gap: 30px;
 }
 
+.description-lodging-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 95%;
+     .description-lodging-container-left {
+          display: flex;
+          flex-direction: column;
+          width: 47.5%;
+          color: $color-secondary;
+          row-gap: 15px;
+          .description-lodging {
+               display: flex;
+               flex-direction: column;
+               row-gap: 10px;
+               h2 {
+                    font-size: xx-large;
+                    font-weight: 500;
+               }
+               p {
+                    font-size: medium;
+                    font-weight: 500;
+               }
+          }
+          .tags-container {
+               display: flex;
+               flex-direction: row;
+               column-gap: 10px;
+          }
+     }
+     .description-lodging-container-right {
+          display: flex;
+          flex-direction: column;
+          color: $color-secondary;
+          row-gap: 15px;
+     }
+}

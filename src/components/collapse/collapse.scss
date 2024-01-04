@@ -3,7 +3,6 @@
 .collapse {
      background-color: $color-tertiary;
      width: 70%;
-     margin: 0 auto;
      border-radius: 10px;
      &_title {
           display: flex;
@@ -12,7 +11,11 @@
           color: $color-primary;
           border-radius: 10px;
           font-size: medium;
+          font-weight: 500;
           padding: 10px 15px;
+          & h3 {
+               font-weight: 500;
+          }
           .arrow_up {
                transition: all 0.2s ease-in-out;
                transform: rotate(0deg);
@@ -27,6 +30,7 @@
           height: auto;
           color: $color-secondary;
           font-size: large;
+          font-weight: 500;
           opacity: 1;
           transition: all;
                &_hidden {
@@ -39,5 +43,37 @@
 
 .collapse_lodging {
      display: flex;
-     justify-content: space-between;
+     flex-direction: row;
+     width: 95%;
+     margin-bottom: 29px;
+     &_container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+     }
+     &_description,
+     &_equipments {
+          width: 45%;
+          & .collapse {
+               width: 100%;
+               &_description {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    min-height: 140px;
+               }
+          }
+     }
+     // &_equipments {
+     //      width: 45%;
+     //      & .collapse {
+     //           width: 100%;
+     //           &_description {
+     //                display: flex;
+     //                flex-direction: column;
+     //                flex-wrap: wrap;
+     //                min-height: 140px;
+     //           }
+     //      }
+     // }         
 }
