@@ -27,14 +27,13 @@
      }
      &_description {
           padding: 20px 15px 15px 15px;
-          height: auto;
+          height: 100%;
           color: $color-secondary;
           font-size: large;
           font-weight: 500;
           opacity: 1;
-          transition: all;
+          transition: 1s ease-out;
                &_hidden {
-                    visibility: hidden;
                     opacity: 0;
                     height: 0;
                }
@@ -53,14 +52,30 @@
      }
      &_description,
      &_equipments {
+          // display: flex;
           width: 45%;
+          height: 100%;
+          opacity: 1;
+          transition: 1s ease-out;
+          &_hidden {
+               visibility: hidden;
+               opacity: 0;
+               height: 0;
+          }
           & .collapse {
                width: 100%;
-               &_description {
+               height: 100%;
+                    &_description {
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
-                    min-height: 140px;
+                    opacity: 1;
+                    transition: 1s ease-out;
+                    &_hidden {
+                         visibility: hidden;
+                         opacity: 0;
+                         height: 0;
+                    }
                }
           }
      }
