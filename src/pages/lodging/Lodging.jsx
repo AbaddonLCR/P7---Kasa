@@ -52,9 +52,7 @@ const Lodging = () => {
                          </div>
                          <div className='collapse_lodging_equipments'>
                               <Collapse 
-                                   // key={`${data.title}-${data.index}`}
                                    collapseTitle={<h3>Équipements</h3>}
-                                   // collapseDescription={<p>{data.equipments}</p>}/>
                                    collapseDescription={data.equipments.map((equipments, index) => (
                                         <li key={`${index}-${equipments}`}>{equipments}</li>
                                    ))}

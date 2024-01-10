@@ -52,7 +52,6 @@
      }
      &_description,
      &_equipments {
-          // display: flex;
           width: 45%;
           height: 100%;
           opacity: 1;
@@ -78,17 +77,5 @@
                     }
                }
           }
-     }
-     // &_equipments {
-     //      width: 45%;
-     //      & .collapse {
-     //           width: 100%;
-     //           &_description {
-     //                display: flex;
-     //                flex-direction: column;
-     //                flex-wrap: wrap;
-     //                min-height: 140px;
-     //           }
-     //      }
-     // }         
+     }      
 }
