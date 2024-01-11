@@ -14,12 +14,19 @@
      flex-direction: row;
      justify-content: space-between;
      width: 90%;
+     @media screen and (max-width: 768px) {
+          flex-direction: column;
+          width: 90%;
+     }
      .description-lodging-container-left {
           display: flex;
           flex-direction: column;
           width: 47.5%;
           color: $color-secondary;
           row-gap: 15px;
+          @media screen and (max-width: 768px) {
+               width: 100%;
+          }
           .description-lodging {
                display: flex;
                flex-direction: column;
@@ -45,5 +52,21 @@
           flex-direction: column;
           color: $color-secondary;
           row-gap: 15px;
+          .host {
+               height: 100%;
+               &_name{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    height: 100%;
+                    row-gap: 10px;
+               }
+          }
+          @media screen and (max-width: 768px) {
+               width: 100%;
+               flex-direction: row-reverse;
+               justify-content: space-between;
+               align-items: center;
+          }
      }
 }
