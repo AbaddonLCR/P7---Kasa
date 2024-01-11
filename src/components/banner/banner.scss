@@ -9,6 +9,7 @@
      width: 90%;
      height: 220px;
      @media screen and (max-width: 768px){
+          flex-direction: row;
           height: 110px;
      }
      & img {
@@ -25,7 +26,6 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          text-align: center;
           position: absolute;
           width: 100%;
           height: 100%;
@@ -33,8 +33,11 @@
           font-size: 45px;
           font-weight: 500;
           @media screen and (max-width: 768px){
-            font-size: 24px;
-            text-align: left;
+               font-size: 24px;
+               justify-content: flex-start;
+               text-align: left;
+               width: 220px;
+               margin-left: 20px;
           }
      }
 }
