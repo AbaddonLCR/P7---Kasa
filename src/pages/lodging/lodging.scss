@@ -16,12 +16,12 @@
      width: 90%;
      @media screen and (max-width: 768px) {
           flex-direction: column;
-          width: 90%;
+          row-gap: 15px;
      }
      .description-lodging-container-left {
           display: flex;
           flex-direction: column;
-          width: 47.5%;
+          width: 80%;
           color: $color-secondary;
           row-gap: 15px;
           @media screen and (max-width: 768px) {
@@ -45,6 +45,9 @@
                flex-direction: row;
                column-gap: 10px;
                flex-wrap: wrap;
+               @media screen and (max-width: 768px) {
+                    row-gap: 10px;
+               }
           }
      }
      .description-lodging-container-right {
