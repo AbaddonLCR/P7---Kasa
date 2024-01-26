@@ -30,9 +30,9 @@ const Lodging = () => {
                               <p className='lodging-location'>{data.location}</p>
                          </div>
                          <div className='tags-container'>
-                              {data.tags.map(tag => {
+                              {data.tags.map((tag, index) => {
                                    return (
-                                        <Tags tags={tag} />
+                                        <Tags key={index} tags={tag} />
                                    )
                               })}
                          </div>
@@ -48,7 +48,6 @@ const Lodging = () => {
                               <Collapse 
                                    collapseTitle={<h3>Description</h3>}
                                    collapseDescription={<p>{data.description}</p>}/>
-                              
                          </div>
                          <div className='collapse_lodging_equipments'>
                               <Collapse 
