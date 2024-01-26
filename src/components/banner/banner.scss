@@ -12,7 +12,8 @@
           flex-direction: row;
           height: 110px;
      }
-     & img {
+
+     .banner-home {
           position: absolute;
           border-radius: 25px;
           width: 100%;
@@ -22,6 +23,16 @@
                height: 110px;
           }
      }
+
+     .banner-about {
+          position: absolute;
+          border-radius: 25px;
+          width: 100%;
+          height: 220px;
+          object-fit: cover;
+          filter: brightness(70%);
+     }
+     
      & p {
           display: flex;
           justify-content: center;

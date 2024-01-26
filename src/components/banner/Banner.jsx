@@ -17,10 +17,11 @@ const Banner = () => {
      }, [])
 
      return (
-          <div className='banner_container'>
-               {homePage ? <img src={banner_home} alt="banner rocky sea shore home kasa" /> : <img src ={banner_about} alt="banner moutain about kasa" />}
+          <section className='banner_container'>
+               {homePage ? <img src={banner_home} className='banner-home' alt="banner rocky sea shore home kasa" /> : 
+               <img src ={banner_about} className='banner-about' alt="banner moutain about kasa" />}
                {homePage ? <p>Chez vous, partout et ailleurs</p> : null }
-          </div>
+          </section>
      );
 };
 

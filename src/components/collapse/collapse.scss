@@ -14,7 +14,6 @@
           color: $color-primary;
           border-radius: 10px;
           font-size: medium;
-          font-weight: 500;
           padding: 10px 15px;
           & h3 {
                font-weight: 500;
@@ -30,12 +29,12 @@
      }
      &_description {
           padding: 20px 15px 15px 15px;
+          width: auto;
           height: 100%;
           color: $color-secondary;
           font-size: large;
           font-weight: 500;
           opacity: 1;
-          transition: 1s ease-out;
                &_hidden {
                     opacity: 0;
                     height: 0;
@@ -63,10 +62,8 @@
           width: 45%;
           height: 100%;
           opacity: 1;
-          transition: 1s ease-out;
           @media screen and (max-width: 768px) {
                width: 100%;
-               transition: none;
           }
           &_hidden {
                visibility: hidden;
@@ -80,7 +77,6 @@
                     flex-direction: column;
                     flex-wrap: wrap;
                     opacity: 1;
-                    transition: 1s ease-out;
                     &_hidden {
                          visibility: hidden;
                          opacity: 0;
